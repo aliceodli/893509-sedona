@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алёна Лагойкина](https://up.htmlacademy.ru/htmlcss/23/user/893509).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
