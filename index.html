@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-  	<!-- Header -->
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  			<a class="main-header-logo">
-  					<img src="img/logo.jpg" width="140" height="72" alt="Логотип Седона">
-  			</a>
-  			<ul class="site-navigation">
-  				<li><a href="#">Информация</a></li>
-  				<li><a href="#">Фото и видео</a></li>
-  				<li><a href="#">Карта штата</a></li>
-  				<li><a href="hotels.html">Гостиницы</a></li>
-  			</ul>
-   		</nav>
-  	</header>
 
-  	
-    <!-- content -->
-  	<main class="container">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  		<!-- Intro -->
-  		<div class="intro">
-  		<img src="img/welcome.png" width="459" height="353" alt="Надпись «Welcome to Sedona»">
-    	</div>
-  		<h1 class="visually-hidden">Город Седона</h1>
-  		<div class="block">
-  			<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
- 			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-  		
-  			<section class="features">
-  				<!-- Тут будут преимущества -->
-  	    	</section>
-  	    </div>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.jpg" width="140" height="72" alt="Логотип Седона">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="photo.html">Фото и видео</a></li>
+        <li><a href="map.html">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  	    <!-- Search -->
-  	    <section class="search-block">
-  	    	<div class="search-main">
-  	    		<h2 class="search-title">Заинтересовались?</h2>
-  	    		<p>Укажите предполагаемые даты поездки,<br>
-				и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			</div>
-			<a class="button" href="#">
-				<p class="btn-item">Поиск гостиницы в Седоне</p>
-			</a>
-			<div class="form">
-				<span>Дата заезда</span>
-				<span>Дата выезда</span>
-				<span>Взрослые</span>
-				<span>Дети</span>
-			</div>
-  		</section>
-  		<!-- Карта -->
-  	</main>
 
-	<!-- Footer -->
-    <footer class="main-footer">
-   		<div class="footer-container">
-      		<span class="footer-tag">#visitsedona</span>
-      		<div class="footer-social">
-      			 <ul>
-  					<li><a class="social-button tw" href="#">Твиттер</a></li>
-  					<li><a class="social-button fb" href="#">Фейсбук</a></li>
-  					<li><a class="social-button yt" href="#">Ютуб</a></li>
-  				</ul>	
-      		</div>
-      		<section class="footer-copyright">
-                <p>website by 
-                	<a href="#">
-                		<img src="" width="115" height="40" alt="HTML Academy">
-                	</a>
-                </p>
-            </section>
-   		</div>
-	</footer>
-  </body>
+  <!-- content -->
+  <main class="container">
+
+    <!-- Intro -->
+    <div class="intro">
+      <img src="img/welcome.png" width="459" height="353" alt="Надпись «Welcome to Sedona»">
+    </div>
+
+    <h1 class="visually-hidden">Город Седона</h1>
+    <div class="intro-text">
+      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+
+    <section class="features">
+      <!-- Тут будут преимущества -->
+    </section>
+
+      <!-- Search -->
+      <section class="search-block">
+        <div class="search-main">
+          <h2 class="search-title">Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <a class="button" href="form.html">Поиск гостиницы в Седоне</a>
+        <div class="form">
+          <form action="/">
+            <span>Дата заезда</span>
+            <span>Дата выезда</span>
+            <span>Взрослые</span>
+            <span>Дети</span>
+          </form>
+        </div>
+      </section>
+      <!-- Карта -->
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-tag">#visitsedona</div>
+
+      <ul>
+        <li><a class="social-button tw" href="#">Твиттер</a></li>
+        <li><a class="social-button fb" href="#">Фейсбук</a></li>
+        <li><a class="social-button yt" href="#">Ютуб</a></li>
+      </ul>
+
+      <section class="footer-copyright">
+        <p>website by
+          <a href="#">
+            <img src="" width="115" height="40" alt="HTML Academy">
+          </a>
+        </p>
+      </section>
+    </div>
+  </footer>
+</body>
+
 </html>
