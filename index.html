@@ -49,15 +49,42 @@
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <a class="button" href="form.html">Поиск гостиницы в Седоне</a>
-        <div class="form">
-          <form action="/">
-            <span>Дата заезда</span>
-            <span>Дата выезда</span>
-            <span>Взрослые</span>
-            <span>Дети</span>
-          </form>
-        </div>
-      </section>
+        <form class="search-form" action="/" method="post">
+          <div class="form-item">
+            <label for="arrival-date" class="search-form-label">
+              Дата заезда:
+            </label>
+            <input type="date" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+            <span class="input-date" tabindex="0">
+              <img src="img/calendar.svg" alt="calendar" width="22" height="22">
+            </span>
+          </div>
+          <div class="form-item">
+            <label for="departure" class="search-form-label">
+              Дата выезда:
+            </label>
+            <input type="text" name="departure" id="departure" value="4 июля 2017">
+            <span class="input-date" tabindex="0">
+              <img src="img/calendar.svg" alt="calendar" width="22" height="22">
+            </span>
+          </div>
+          <div class="form-item">
+            <label for="adults" class="search-form-label">
+              Взрослые:
+            </label>
+            <input type="text" name="adults" id="adults" value="2">
+            <span class="form-item-btn add-btn-adult" aria-label="Больше" tabindex="0">+</span>
+            <span class="form-item-btn remove-btn-adult" aria-label="Меньше" tabindex="0">–</span>
+            <label for="children" class="search-form-label">
+              Дети:
+            </label>
+            <input type="text" id="children" name="children" value="0">
+            <span class="add-btn-child" aria-label="Больше" tabindex="0">+</span>
+            <span class="remove-btn-child" aria-label="Меньше" tabindex="0">–</span>
+          </div>
+          <button class="button" type="submit">Найти</button>
+        </form>
+
       <!-- Карта -->
       <img src="img/map.jpg" width="1718" height="748" alt="Карта">
   </main>
