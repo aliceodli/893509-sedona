@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link  href="//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -28,7 +31,7 @@
 
     <!-- Intro -->
     <div class="intro">
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="Надпись «Welcome to Sedona»">
+      <img src="img/intro-welcome.svg" width="459" height="353" alt="Надпись «Welcome to Sedona»" class="intro-img">
     </div>
 
     <h1 class="visually-hidden">Город Седона</h1>
@@ -48,13 +51,13 @@
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
-        <a class="button" href="form.html">Поиск гостиницы в Седоне</a>
+        <a class="button button-brown" href="form.html">Поиск гостиницы в Седоне</a>
         <form class="search-form" action="/" method="post">
           <div class="form-item">
             <label for="arrival-date" class="search-form-label">
               Дата заезда:
             </label>
-            <input type="date" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+            <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
             <span class="input-date" tabindex="0">
               <img src="img/calendar.svg" alt="calendar" width="22" height="22">
             </span>
@@ -79,8 +82,8 @@
               Дети:
             </label>
             <input type="text" id="children" name="children" value="0">
-            <span class="add-btn-child" aria-label="Больше" tabindex="0">+</span>
-            <span class="remove-btn-child" aria-label="Меньше" tabindex="0">–</span>
+            <span class="form-item-btn add-btn-child" aria-label="Больше" tabindex="0">+</span>
+            <span class="form-item-btn remove-btn-child" aria-label="Меньше" tabindex="0">–</span>
           </div>
           <button class="button" type="submit">Найти</button>
         </form>
