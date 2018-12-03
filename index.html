@@ -11,16 +11,16 @@
 
 <body>
   <!-- Header -->
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седона">
       </a>
-      <ul class="site-navigation">
+      <ul class="site-navigation clearfix">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photo.html">Фото и видео</a></li>
-        <li><a href="map.html">Карта штата</a></li>
         <li><a href="hotels.html">Гостиницы</a></li>
+        <li><a href="map.html">Карта штата</a></li>
       </ul>
     </nav>
   </header>
@@ -40,24 +40,79 @@
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
 
-    <section class="features">
+
+
       <!-- Тут будут преимущества -->
+
+    <section class="dignity-container clearfix">
+      <div class="dignity-item pull-left">
+        <strong class="dignity-name">Настоящий<br> городок</strong>
+        <p>&ndash; №1 &ndash;</p>
+        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      <div class="dignity-foto pull-right">Достопримечательность
+      </div>
     </section>
+    <section class="features clearfix">
+      <div class="features-item features-item-housing">
+        <b class="features-name">Жилье</b>
+        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </div>
+      <div class="features-item features-item-food">
+        <b class="features-name">еда</b>
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      </div>
+      <div class="features-item features-item-souvenir">
+        <b class="features-name">Сувениры</b>
+        <p>Не только китайского, но и местного производства!</p>
+      </div>
+    </section>
+    <section class="dignity-container clearfix">
+      <div class="dignity-foto pull-left">Достопримечательность
+      </div>
+      <div class="dignity-item pull-right">
+      <strong class="dignity-name">Там есть<br> мост дьявола</strong>
+      <p>&ndash; №2 &ndash;</p>
+      <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+    </section>
+    <section class="dignity-container clearfix">
+      <div class="dignity-item">
+        <strong class="dignity-name">Небольшая<br> площадь</strong>
+        <p>&ndash; №3 &ndash;</p>
+        <p>Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="dignity-item">
+        <strong class="dignity-name">Красивая<br> дорога</strong>
+        <p>&ndash; №4 &ndash;</p>
+        <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+      </div>
+      <div class="dignity-item">
+        <strong class="dignity-name">Мало<br> туристов</strong>
+        <p>&ndash; №5 &ndash;</p>
+        <p>Большинство едет в гранд каньон и толпится там</p>
+      </div>
+    </section>
+
+
+
 
       <!-- Search -->
       <section class="search-block">
+        <div class="search-main-block">
         <div class="search-main">
           <h2 class="search-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <a class="button button-brown" href="form.html">Поиск гостиницы в Седоне</a>
+      </div>
         <form class="search-form" action="/" method="post">
           <div class="form-item">
             <label for="arrival-date" class="search-form-label">
               Дата заезда:
             </label>
-            <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+            <input type="text" name="arrival-date" id="arrival-date" class="date" value="24 апреля 2017">
             <span class="input-date" tabindex="0">
               <img src="img/calendar.svg" alt="calendar" width="22" height="22">
             </span>
@@ -66,31 +121,35 @@
             <label for="departure" class="search-form-label">
               Дата выезда:
             </label>
-            <input type="text" name="departure" id="departure" value="4 июля 2017">
+            <input type="text" name="departure" id="departure" class="date" value="4 июля 2017">
             <span class="input-date" tabindex="0">
               <img src="img/calendar.svg" alt="calendar" width="22" height="22">
             </span>
           </div>
           <div class="form-item">
-            <label for="adults" class="search-form-label">
+            <label for="adults" class="search-form-label adults">
               Взрослые:
             </label>
-            <input type="text" name="adults" id="adults" value="2">
+            <input type="text" name="adults" id="adults" class="num" value="2">
             <span class="form-item-btn add-btn-adult" aria-label="Больше" tabindex="0">+</span>
             <span class="form-item-btn remove-btn-adult" aria-label="Меньше" tabindex="0">–</span>
-            <label for="children" class="search-form-label">
+            <label for="children" class="search-form-label children">
               Дети:
             </label>
-            <input type="text" id="children" name="children" value="0">
+            <input type="text" id="children" name="children" class="num" value="0">
             <span class="form-item-btn add-btn-child" aria-label="Больше" tabindex="0">+</span>
             <span class="form-item-btn remove-btn-child" aria-label="Меньше" tabindex="0">–</span>
           </div>
           <button class="button" type="submit">Найти</button>
         </form>
+ <div class="map-container"></div>
 
-      <!-- Карта -->
-      <img src="img/map.jpg" width="1718" height="748" alt="Карта">
+      <!-- Карта
+      <img src="img/map.jpg" width="1718" height="748" alt="Карта" class="map"> -->
+    </section>
   </main>
+
+
 
 
   <!-- Footer -->
@@ -98,13 +157,15 @@
     <div class="footer-container">
       <div class="footer-tag">#visitsedona</div>
 
+      <div class="footer-social">
       <ul>
         <li><a class="social-button social-button-tw" href="#">Твиттер</a></li>
         <li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
         <li><a class="social-button social-button-yt" href="#">Ютуб</a></li>
       </ul>
+    </div>
 
-      <section class="footer-copyright">
+      <section class="footer-copyright col-1-3">
         <p>website by
           <a href="#">
             <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTML Academy">
