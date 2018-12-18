@@ -34,7 +34,7 @@ a {
 	list-style: none;
 }
 
-.site-navigation a{
+.site-navigation a {
 	color: #000000;
 }
 
@@ -69,6 +69,21 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.intro::before {
+	content: "";
+	position: absolute;
+
+	bottom: 114px;
+	left: 160px;
+
+	display: block;
+	width: 1200px;
+	height: 59px;
+	background-image: url(../img/polygon.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .intro-text {
@@ -150,6 +165,7 @@ a {
 }
 
 .search-form {
+	display: none;
 	font-size: 14px;
 	font-weight: 700;
 	color: #000000;
@@ -230,7 +246,8 @@ fieldset .main-title {
 	color: #fff;
 }
 
-fieldset ul {
+.infrastructure-items,
+.prop-type-items {
 	margin: 0;
 	padding-right: 15px;
 	list-style: none;
@@ -247,19 +264,19 @@ fieldset ul {
 
 /*Футер*/
 
-.main-footer{
+.main-footer {
 	color: #000000;
 	background-color: #ffffff;
 }
 
-.footer-tag{
+.footer-tag {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 }
 
-.footer-container ul{
+.footer-container ul {
 	text-align: center;
 }
 
@@ -331,7 +348,6 @@ input[type="checkbox"] {
 html,
 body {
 	min-width: 1122px;
-	min-height: 1750px;
 }
 
 
@@ -354,7 +370,7 @@ body {
 	min-height: 55px; 
 }
 
-.main-header-logo{
+.main-header-logo {
 	position: absolute;
 	transform: translateX(-50%);
 	left:50%;
@@ -392,7 +408,7 @@ body {
 	padding: 76px 370px 73px;
 }
 
-.intro{
+.intro {
 	margin-bottom: 65px;
 }
 
@@ -509,7 +525,7 @@ body {
 }
 
 
-.search-title{
+.search-title {
 	margin-top: 0px;
 }
 
@@ -585,7 +601,7 @@ body {
 	height: 22px;
 }
 
-.search-form .num{
+.search-form .num {
 	width: 102px;
 	text-align: center;
 }
@@ -619,7 +635,7 @@ body {
 	margin-right: -14px;
 }
 
-.num.child{
+.num.child {
 	width: 104px;
 }
 
@@ -639,8 +655,13 @@ body {
 	background-image: url("../img/map.jpg");
 	width: 100%;
 	height: 370px;
-	padding: 50px 0;
 	margin-bottom: -62px;
+}
+
+.map-container iframe {
+	border: 0;
+	width: 1200px;
+	height: 470px;
 }
 
 .filters-form {
@@ -657,7 +678,8 @@ body {
 	cursor: pointer;
 }
 
-fieldset li {
+.infrastructure-items li,
+.prop-type-items li {
 	margin-top: 25px;
 }
 
@@ -698,138 +720,138 @@ fieldset li {
 
 
 .filter-range {
-  width: 330px;
-  margin: 50px auto; /* для демо */
+	width: 330px;
+	margin: 50px auto; /* для демо */
 
-  color: #ffffff;
-  text-transform: uppercase;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+	margin-bottom: 9px;
 
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .price-controls {
-  position: relative;
-  
-  height: 36px;
-  margin-bottom: 20px;
+	position: relative;
 
-  font-size: 0;
+	height: 36px;
+	margin-bottom: 20px;
 
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+	font-size: 0;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
 }
 
 .price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
 
-  width: 2px;
-  height: 22px;
+	width: 2px;
+	height: 22px;
 
-  background: #ffffff;
-  transform: translate(-50%, -50%);
+	background: #ffffff;
+	transform: translate(-50%, -50%);
 }
 
 .price-controls label {
-  display: inline-block;
+	display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
 
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+	width: 90px;
+	padding-left: 65px;
 }
 
 .price-controls input {
-  width: 50px;
-  margin: 0;
+	width: 50px;
+	margin: 0;
 
-  color: inherit;
-  font: inherit;
+	color: inherit;
+	font: inherit;
 
-  background: none;
-  border: none;
+	background: none;
+	border: none;
 }
 
 .range-controls {
-  position: relative;
+	position: relative;
 
-  margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .range-controls .scale {
-  height: 2px;
+	height: 2px;
 
-  background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
-  width: 80%;
-  height: 2px;
+	width: 80%;
+	height: 2px;
 
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .range-toggle {
-  position: absolute;
-  top: -9px;
+	position: absolute;
+	top: -9px;
 
-  width: 4px;
-  height: 4px;
+	width: 4px;
+	height: 4px;
 
-  background: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+	background: #1c4f80;
 }
 
 .range-toggle-min {
-  left: 0;
+	left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+	left: 80%;
 }
 
 .btn-transparent {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
 
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
 
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn-transparent:hover {
-  color: #000000;
+	color: #000000;
 
-  background: #ffffff;
+	background: #ffffff;
 }
 
 .hotels-sorting {
@@ -1162,4 +1184,25 @@ fieldset li {
 
 .hotels-sorting {
 	display: flex;
+}
+
+@keyframes modal {
+	0% {
+		transform: translateX(-283px) translateY(-50px);
+		opacity: 0;
+	}
+	70% {
+		opacity: 0.5;
+	}
+
+}
+
+.form-show {
+	display: flex;
+	flex-direction: column;
+	animation: modal 0.7s;
+}
+
+.form-error {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
