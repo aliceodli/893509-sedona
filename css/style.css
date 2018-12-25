@@ -123,10 +123,6 @@ a {
 	margin-bottom: 0;
 }
 
-.hotel-info h2 a {
-	color: #000000;
-}
-
 .hotel-info a {
 	color: #333333;
 }
@@ -147,7 +143,7 @@ a {
 /*Форма поиска*/
 
 .search-block {
-	padding-top: 55px;
+	padding-top: 49px;
 	text-align: center;
 }
 
@@ -197,6 +193,7 @@ a {
 
 .form-counter {
 	display: inherit;
+	margin-top: 4px;
 }
 
 .form-input-num {
@@ -305,12 +302,12 @@ a {
 /*Футер*/
 
 .main-footer {
+	position: absolute;
 	color: #000000;
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.9);
 
 	box-sizing: border-box;
 	padding-right: 31px;
-	padding-top: 8px;
 	padding-left: 64px;
 }
 
@@ -346,6 +343,7 @@ a {
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
+	box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 
@@ -457,7 +455,7 @@ input[type="radio"].visually-hidden {
 
 
 .dignity-container {
-	min-height: 255px;
+	min-height: 258px;
 	display: flex;
 	background-color: #eeeeee;
 }
@@ -466,7 +464,7 @@ input[type="radio"].visually-hidden {
 
 	width: 33%;
 	padding: 30px 0;
-	padding-top: 45px;
+	padding-top: 44px;
 	text-align: center;
 	background-color: #eeeeee;
 	box-sizing: border-box;
@@ -475,12 +473,23 @@ input[type="radio"].visually-hidden {
 .dignity-name {
 	font-size: 21px;
 	font-weight: 700;
-	line-height: 21px;
+	line-height: 17px;
+}
+
+.dignity-header {
+	max-width: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6px;
 }
 
 .dignity-item p {
-	margin: 20px 0;
+	margin: 22px 0;
 	padding: 0 10%;
+}
+
+.dignity-item .city {
+	padding: 0 13%;
 }
 
 .dignity-item.pull-left,
@@ -506,6 +515,19 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/content-2.jpg"); 
 }
 
+.last-dignity {
+	padding-left: 2px;
+	margin-top: -3px;
+}
+
+.last-dignity p {
+	padding: 0 15%;
+}
+
+.last-dignity .dignity-item {
+	margin-right: 6px;
+}
+
 .features {
 	min-height: 330px;
 	display: flex;
@@ -515,8 +537,8 @@ input[type="radio"].visually-hidden {
 .features-item {
 	position: relative;
 
-	width: 33%;
-	padding: 165px 5% 60px;
+	width: 33.5%;
+	padding: 161px 4% 60px;
 	text-align: center;
 }
 
@@ -623,6 +645,7 @@ input[type="radio"].visually-hidden {
 
 .search-form {
 	padding-top: 54px;
+	padding-bottom: 6px;
 }
 
 
@@ -661,6 +684,7 @@ input[type="radio"].visually-hidden {
 	line-height: 36px;
 	width: 108px;
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 4px;
 }
 
@@ -696,7 +720,7 @@ input[type="radio"].visually-hidden {
 .map-container iframe {
 	border: 0;
 	width: 1200px;
-	height: 470px;
+	height: 591px;
 }
 
 .filters-form {
@@ -773,7 +797,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
 	position: relative;
 
-	height: 36px;
+	height: 32px;
 	margin-bottom: 20px;
 
 	font-size: 0;
@@ -799,7 +823,7 @@ input[type="radio"].visually-hidden {
 	display: inline-block;
 
 	font-size: 14px;
-	line-height: 38px;
+	line-height: 33px;
 	vertical-align: top;
 
 	cursor: pointer;
@@ -807,8 +831,14 @@ input[type="radio"].visually-hidden {
 
 .price-controls .min-price,
 .price-controls .max-price {
-	width: 90px;
-	padding-left: 65px;
+	width: 79px;
+	padding-left: 66px;
+	padding-right: 15px;
+}
+
+.price-controls .max-price {
+	padding-right: 23px;
+	padding-left: 54px;
 }
 
 .price-controls input {
@@ -1073,12 +1103,12 @@ input[type="radio"].visually-hidden {
 
 
 .main-footer {
-	width: 100%;
-	margin-top: -62px;
+	width: 79%;
+	margin-top: -52px;
 }
 
 .footer-container {
-	margin: 0 73px;
+	margin: 0 68px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -1112,12 +1142,16 @@ input[type="radio"].visually-hidden {
 
 .social-button {
 	background-color: #81b3d2;
-	margin-left: 10px;
-	height: 45px;
+	margin-left: 8px;
+	height: 48px;
 	width: 45px;
 	display: block;
 	padding: 15px 0;
 	box-sizing: border-box;
+}
+
+.social-button-fb svg {
+	margin-top: -2px;
 }
 
 .footer-copyright p {
@@ -1144,7 +1178,7 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .social {
-	margin-left: 242px;
+	margin-left: 249px;
 }
 
 
@@ -1216,12 +1250,12 @@ input[type="radio"].visually-hidden {
 	color: rgba(255,255,255,0.3);
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a:focus path {
+.copyright-href:hover path,
+.copyright-href:focus path {
 	fill: #81b3d2;
 }
 
-.footer-copyright a:active path {
+.copyright-href:active path {
 	fill: #bdbbbc;
 }
 
@@ -1230,6 +1264,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-copyright span {
 	padding-top: 10px;
+	margin-right: 6px;
 }
 
 

@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link  href="//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body>
@@ -46,9 +46,11 @@
 
       <section class="dignity-container">
         <div class="dignity-item blue">
-          <strong class="dignity-name">Настоящий<br> городок</strong>
+          <div class="dignity-header">
+            <strong class="dignity-name">Настоящий городок</strong>
+          </div>
           <p>&ndash; №1 &ndash;</p>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          <p class="city">Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="dignity-foto pull-right">Достопримечательность
         </div>
@@ -75,27 +77,33 @@
         <div class="dignity-foto pull-left">Достопримечательность
         </div>
         <div class="dignity-item blue">
-        <strong class="dignity-name">Там есть<br> мост дьявола</strong>
-        <p>&ndash; №2 &ndash;</p>
-        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
+          <strong class="dignity-name">Там есть<br> мост дьявола</strong>
+          <p>&ndash; №2 &ndash;</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
       </section>
 
-      <section class="dignity-container">
+      <section class="dignity-container last-dignity">
         <div class="dignity-item">
-          <strong class="dignity-name">Небольшая<br> площадь</strong>
+          <div class="dignity-header">
+            <strong class="dignity-name">Небольшая площадь</strong>
+          </div>
           <p>&ndash; №3 &ndash;</p>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
 
         <div class="dignity-item">
-          <strong class="dignity-name">Красивая<br> дорога</strong>
+          <div class="dignity-header">
+            <strong class="dignity-name">Красивая дорога</strong>
+          </div>
           <p>&ndash; №4 &ndash;</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
 
         <div class="dignity-item">
-          <strong class="dignity-name">Мало<br> туристов</strong>
+          <div class="dignity-header">
+            <strong class="dignity-name">Мало туристов</strong>
+          </div>
           <p>&ndash; №5 &ndash;</p>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </div>
@@ -135,9 +143,9 @@
                   Взрослые:
                 </label>
                 <div class="form-input-num">
-                  <button class="form-item-btn remove-btn" aria-label="Меньше" tabindex="0"></button>
+                  <button class="form-item-btn remove-btn" aria-label="Меньше" tabindex="0" type="button"></button>
                   <input type="text" name="adults" id="adults" class="num" value="2">
-                  <button class="form-item-btn add-btn" aria-label="Больше" tabindex="0"></button>
+                  <button class="form-item-btn add-btn" aria-label="Больше" tabindex="0" type="button"></button>
                 </div>
               </div>
               <div class="form-counter counter-children">
@@ -145,9 +153,9 @@
                   Дети:
                 </label>
                 <div class="form-input-num">
-                  <button class="form-item-btn remove-btn" aria-label="Меньше" tabindex="0"></button>
+                  <button class="form-item-btn remove-btn" aria-label="Меньше" tabindex="0" type="button"></button>
                   <input type="text" id="children" name="children" class="num child" value="0">
-                  <button class="form-item-btn add-btn" aria-label="Больше" tabindex="0"></button>
+                  <button class="form-item-btn add-btn" aria-label="Больше" tabindex="0" type="button"></button>
                 </div>
               </div>
             </div>
@@ -198,7 +206,7 @@
       </div>
     </footer>
   </div>
-  <script type="text/javascript" src="js/script.js">
+  <script type="text/javascript" src="js/script.min.js">
   </script>
 </body>
 </html>
